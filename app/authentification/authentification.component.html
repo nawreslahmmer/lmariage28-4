@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="form_area">
+    <img src="https://www.evenementielpourtous.com/images/photo/mini/76813_1_mini_123497.jpg" alt="Image" class="form_image">
+    <img src="https://img.freepik.com/vecteurs-premium/deux-colombes-volant-bagues-mariage-illustration-vectorielle_953063-607.jpg" alt="Image" class="form_image_right">
+    <!-- Image à gauche du formulaire -->
+    <p class="title">LOG IN</p>
+    <form action="">
+      <div class="form_group">
+
+      </div>
+      <div class="form_group">
+        <label class="sub_title" for="email">Email</label>
+        <input placeholder="Enter your email" id="mail" class="form_style" type="email" [(ngModel)]="personne.mail" name="mail">
+      </div>
+      <div class="form_group">
+        <label class="sub_title" for="password">Password</label>
+        <input placeholder="Enter your password" id="password" class="form_style" type="password"  [(ngModel)]="personne.password" name="mail">
+      </div>
+      <div>
+        <button class="btn" (click)="login()">SE CONNECTER </button>
+      </div>
+     
+     <p>Have an Account? </p>
+      <div>
+        <a [routerLink]="'/signup'">
+          <button class="button">sign up</button>
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
